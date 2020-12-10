@@ -1,0 +1,20 @@
+[package]
+name = "fun-with-wasm"
+version = "0.1.0"
+authors = ["Max Nachlinger <mnachlinger@walmartlabs.com>"]
+edition = "2018"
+publish = false
+license = "UNLICENSED"
+
+[lib]
+crate-type=["cdylib"]
+
+[dependencies]
+js-sys = "0.3.45"
+wasm-bindgen = { version = "0.2.68", features = ["serde-serialize"] }
+
+[dev-dependencies]
+wasm-bindgen-test = "0.3.18"
+
+[package.metadata.wasm-pack.profile.release]
+wasm-opt = ["-Oz", "--enable-mutable-globals"]

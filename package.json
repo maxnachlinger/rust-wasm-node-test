@@ -1,0 +1,21 @@
+{
+  "name": "fun-with-wasm",
+  "version": "0.0.1",
+  "description": "An experiment to test WASM perf",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "wasm-pack build --release --target nodejs --out-dir dist --out-name index",
+    "bench": "node ./benchmarks/fibonacci.js"
+  },
+  "license": "UNLICENSED",
+  "files": [
+    "dist/index.d.ts",
+    "dist/index.js",
+    "dist/index_bg.js",
+    "dist/index_bg.wasm"
+  ],
+  "types": "wasm/index.d.ts",
+  "devDependencies": {
+    "benchmark": "^2.1.4"
+  }
+}
