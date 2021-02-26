@@ -1,5 +1,7 @@
 # fun with Rust, WASM, and Node
 
+[Here's some additional WASM/Rust fun as well](https://github.com/maxnachlinger/maze-challenge) 
+
 ## Setup
 
 - [Install Rust](https://www.rust-lang.org/tools/install)
