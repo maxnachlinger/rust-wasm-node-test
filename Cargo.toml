@@ -1,7 +1,7 @@
 [package]
 name = "fun-with-wasm"
 version = "0.1.0"
-authors = ["Max Nachlinger <mnachlinger@walmartlabs.com>"]
+authors = ["Max Nachlinger <maxNOSPAM.nachlingerNOSPAM@gmail.com>"]
 edition = "2018"
 publish = false
 license = "UNLICENSED"
