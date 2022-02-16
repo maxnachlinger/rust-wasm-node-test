@@ -1,14 +1,14 @@
 extern crate wasm_bindgen;
 use wasm_bindgen::prelude::*;
 
-fn fibonacci_internal(n: usize) -> u64 {
-    let mut x : u64 = 1;
-    let mut y : u64 = 1;
-    let mut temp : u64;
+fn fibonacci_internal(n: i64) -> i64 {
+    let mut x: i64 = 1;
+    let mut y: i64 = 1;
+    let mut temp: i64;
 
     for _ in 1..n {
         temp = x;
-        x = x+y;
+        x += y;
         y = temp
     }
 
@@ -16,8 +16,8 @@ fn fibonacci_internal(n: usize) -> u64 {
 }
 
 #[wasm_bindgen(js_name = fibonacci)]
-pub fn fibonacci(n: usize) -> JsValue {
-    JsValue::from(fibonacci_internal(n) as f64)
+pub fn fibonacci(n: f64) -> JsValue {
+    JsValue::from(fibonacci_internal(n as i64) as f64)
 }
 
 #[cfg(test)]
