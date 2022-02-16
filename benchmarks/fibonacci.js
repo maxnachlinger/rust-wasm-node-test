@@ -13,6 +13,12 @@ const suite = Benchmark.Suite({
 const results = [];
 
 suite
+    .add('js fib 10', function () {
+      jsFibonacci(10);
+    })
+    .add('wasm fib 10', function () {
+      fibonacci(10);
+    })
   .add('js fib 20', function () {
     jsFibonacci(20);
   })
