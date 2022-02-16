@@ -27,7 +27,7 @@ mod tests {
 
     #[wasm_bindgen_test]
     fn fibonacci_test() {
-        let result = fibonacci_internal(50);
-        assert_eq!(result, 12586269025);
+        let result = fibonacci_internal(10);
+        assert_eq!(result, 55);
     }
 }
