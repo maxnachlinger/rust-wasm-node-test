@@ -1,6 +1,6 @@
 # fun with Rust, WASM, and Node
 
-[Here's some additional WASM/Rust fun as well](https://github.com/maxnachlinger/maze-challenge) 
+[Here's some additional WASM/Rust fun as well](https://github.com/maxnachlinger/maze-challenge)
 
 ## Setup
 
@@ -34,17 +34,17 @@ npm run bench
 
 ```shell
 node -v
-v20.5.1
+v20.11.0
 ```
 
 ### Fibonacci Benchmarks
 | | ops/sec | # of runs |
 | :---------- | ----------: | ----------: |
-| js fib 10 | 133,906,778 | 99 |
-| wasm fib 10 | 27,994,726 | 89 |
-| js fib 20 | 70,775,376 | 98 |
-| wasm fib 20 | 28,095,583 | 82 |
-| js fib 40 | 36,803,445 | 99 |
-| wasm fib 40 | 26,213,376 | 89 |
-| js fib 100 | 5,862,009 | 97 |
-| wasm fib 100 | 20,947,269 | 93 |
+| js fib 10 | 144,564,191 | 99 |
+| wasm fib 10 | 88,475,813 | 101 |
+| js fib 20 | 76,905,343 | 99 |
+| wasm fib 20 | 85,322,069 | 97 |
+| js fib 40 | 39,763,451 | 98 |
+| wasm fib 40 | 73,001,010 | 102 |
+| js fib 100 | 6,661,336 | 100 |
+| wasm fib 100 | 38,729,602 | 102 |
