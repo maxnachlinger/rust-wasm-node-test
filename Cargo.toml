@@ -10,11 +10,11 @@ license = "UNLICENSED"
 crate-type=["cdylib"]
 
 [dependencies]
-js-sys = "0.3.67"
-wasm-bindgen = { version = "0.2.90", features = ["serde-serialize"] }
+js-sys = "0.3.70"
+wasm-bindgen = { version = "0.2.93", features = ["serde-serialize"] }
 
 [dev-dependencies]
-wasm-bindgen-test = "0.3.40"
+wasm-bindgen-test = "0.3.43"
 
 [package.metadata.wasm-pack.profile.release]
 wasm-opt = ["-Oz", "--enable-mutable-globals"]
