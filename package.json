@@ -4,7 +4,9 @@
   "description": "An experiment to test WASM perf",
   "main": "dist/index.js",
   "scripts": {
-    "build": "wasm-pack build --release --target nodejs --out-dir dist --out-name index",
+    "pack": "wasm-pack build --release --target nodejs --out-dir dist --out-name index",
+    "opt": "cp dist/index_bg.wasm dist/index_bg_old.wasm && wasm-opt -O3 -o dist/index_bg_old.wasm dist/index_bg.wasm",
+    "build": "pnpm run pack && pnpm run opt",
     "bench": "node ./benchmarks/fibonacci.js"
   },
   "license": "UNLICENSED",
